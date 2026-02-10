@@ -1,5 +1,5 @@
 import React from "react";
-import aboutmePic from "../src/assets/aboutmePic.jpg"
+import aboutmePic from "../assets/aboutmePic.jpg"
 function About(){
     return <>
     <div className="h-full flex   justify-center items-center  ">

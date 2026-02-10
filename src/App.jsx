@@ -1,8 +1,8 @@
 
-import Home from '../Sections/home'
-import Navbar from "../Components/navbar"
-import About from '../Sections/Aboutme'
-import Projects  from '../Sections/Projects'
+import Home from './Sections/home'
+import Navbar from "./Components/navbar"
+import About from './Sections/Aboutme'
+import Projects  from './Sections/Projects'
 function App() {
 
 
@@ -16,7 +16,7 @@ function App() {
       <section id='About' className='w-full h-screen'>
       <About/> 
       </section>
-             <section id='Projects' className='w-full h-screen'>
+             <section id='Projects' className='w-full '>
       <Projects/> 
       </section>
     </>

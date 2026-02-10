@@ -1,5 +1,5 @@
 
-import ProfilePic from '../src/assets/AmanKhanpic.jpg'
+import ProfilePic from "../assets/AmanKhanpic.jpg"
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import { FaLinkedin,FaGithub } from 'react-icons/fa';

@@ -23,14 +23,16 @@ function Navbar(){
             <div className="flex gap-3 font-semibold text-black">
                 {navItems.map((item)=>(
                     <div key={item.Children}>
-                        <Link 
-                            to={item.path}
-                            smooth={true}
-                            duration={500}
-                            className="cursor-pointer"
-                        >
-                            {item.Children}
-                        </Link>
+                       <Link
+  to={item.path}
+  smooth={true}
+  duration={500}
+  spy={true}
+  activeClass="text-blue-700 font-bold" // Tailwind classes
+  className="cursor-pointer hover:text-gray-700"
+>
+  {item.Children}
+</Link>
                     </div>
                 ))}
             </div>
