@@ -34,7 +34,7 @@ function home(){
           <div className='h-[75vh] flex justify-center-safe items-center w-full'> 
           <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-15 w-[65%]  "> 
            <div className=" flex justify-center items-center">
-            <div className='flex flex-col gap-y-4  '>
+            <div className= ' md:ml-10 flex flex-col gap-y-4  '>
           
             <h1 className="text-4xl gap-y-2 font-bold" ref={el}></h1>
             

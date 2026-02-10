@@ -3,11 +3,11 @@ import {Link} from "react-scroll"
 
 function Navbar(){
     const navItems=[
-        {path:'home',Children: 'Home'},
-        {path:'about',Children: 'About Me'},
-        {path:'projects',Children: 'Projects'},
-        {path:'experience',Children: 'Experience'},
-        {path:'contact',Children: 'Contact Me'},
+        {path:'Home',Children: 'Home'},
+        {path:'About',Children: 'About Me'},
+        {path:'Projects',Children: 'Projects'},
+        {path:'Experience',Children: 'Experience'},
+        {path:'Contact',Children: 'Contact Me'},
     ]
 
     return(
