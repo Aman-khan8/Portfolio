@@ -8,7 +8,7 @@ function Projects(){
 return <>
          <div className=" flex justify-center items-center">
            
-            <div className="w-[65%] flex-col justify-center items-center">
+            <div className="w-[75%] flex-col justify-center items-center">
                  <div className="flex-col "> 
             <h2 className="text-blue-700 font-bold">Projects</h2>
             <span className="text-xl font-bold">Every project is a new challenge and opportunity to learn and grow.</span>

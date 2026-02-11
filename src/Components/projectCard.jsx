@@ -9,7 +9,9 @@ function ProjectCard(props) {
       }`}
     >
       <div className="w-[45%]">
+       <a href={props.liveDemoLink} target="_blank" rel="noopener noreferrer">
         <img src={props.image} alt="project" />
+        </a>
       </div>
 
       <div className="w-[45%]">
