@@ -36,7 +36,7 @@ function Experience() {
             {/* Left Arrow */}
             <button
               onClick={() => scroll("left")}
-              className="absolute left-0 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full shadow z-10 hover:bg-white"
+              className="absolute left-0 hover:scale-105 transition-transform duration-300 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full shadow z-10 hover:bg-white"
             >
               <FaArrowLeft />
             </button>
@@ -44,7 +44,7 @@ function Experience() {
             {/* Right Arrow */}
             <button
               onClick={() => scroll("right")}
-              className="absolute right-0 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full shadow z-10 hover:bg-white"
+              className="absolute right-0 top-1/2 -translate-y-1/2 hover:scale-150  transition-transform duration-300 bg-white/80 p-2 rounded-full shadow z-10 hover:bg-white"
             >
               <FaArrowRight />
             </button>
@@ -52,7 +52,7 @@ function Experience() {
             {/* Slider */}
             <div
               ref={sliderRef}
-              className="w-full flex h-[30%] gap-x-10 overflow-x-auto scroll-smooth snap-x snap-mandatory px-4"
+              className="w-full flex h-[30%] gap-x-10 overflow-hidden scroll-smooth snap-x snap-mandatory px-4"
             >
                  
               <ExperienceCard

@@ -3,7 +3,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 function ExperienceCard(props) {
   return (
-    <div className="w-[30%] h-[35%] bg-white shadow-lg rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300">
+    <div className="md:w-[30%] w-full h-[35%] shrink-0  z-50 bg-white shadow-lg rounded-2xl overflow-hidden ">
       
       <img 
         src={props.image} 
