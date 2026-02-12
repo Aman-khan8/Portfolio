@@ -25,7 +25,7 @@ function home(){
       smartBackspace: true,
     });
 
-    return () => typed.destroy(); // clean up on unmount
+    return () => typed.destroy(); 
   }, []);
     return(
         <>
@@ -40,7 +40,7 @@ function home(){
             
        
             <span className='font-light gap-y-2'>Hi, I’m Aman Khan — a CS student and passionate web developer based in Lahore,Pakistan.</span>
-  <div className='flex gap-2 '> 
+  <div className='flex gap-2  '> 
            <a href="https://www.linkedin.com/in/aman-khan-82970a294/" target="_blank" rel="noopener noreferrer">
   <FaLinkedin size={30} className=" hover:text-3xl " />
 </a>
@@ -59,10 +59,10 @@ function home(){
            </div>
           </div>
           <div className='w-full flex h-[10vh]  '>
-            <div className=' w-full flex justify-center items-center '>
+            <div className=' w-full flex justify-center items-center  '>
               
-              <div className='grid grid-cols-7 gap-x-2   '> 
-              <h1 className='hidden md:flex font-bold mr-3'>Tech Stack <span> </span> </h1>
+              <div className='flex md:gap-12 mt-20   '> 
+              <h1 className=' flex font-bold mr-3'>Tech Stack <span> </span> </h1>
               
   {/* HTML */}
   <FaHtml5 className="text-orange-600 w-10 h-8" title="HTML" />

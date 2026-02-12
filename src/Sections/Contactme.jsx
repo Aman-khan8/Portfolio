@@ -12,10 +12,10 @@ function Contactme(){
             <h2 className="text-blue-700">Contact Me</h2>
             <span className="text-xl">Interested in working together or have an exciting project in mind? Let’s connect and build something amazing.</span>
 
-            <div className="flex md:mt-20 gap-x-10 "> 
+            <div className="md:flex md:mt-20 gap-x-10 mt-5  "> 
     
 <ContactBannner
-    icon={<SiGmail size={20} className="text-red-600 ml-2 mt-0.5 "/>}
+    icon={<SiGmail size={20} className="text-red-600 ml-2 mt-0.5  "/>}
     title="Email Me"
     />
 <ContactBannner

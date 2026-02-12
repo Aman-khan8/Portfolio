@@ -52,7 +52,7 @@ function Experience() {
             {/* Slider */}
             <div
               ref={sliderRef}
-              className="w-full flex h-[30%] gap-x-10 overflow-hidden scroll-smooth snap-x snap-mandatory px-4"
+              className="w-full flex h-[30%] md:mt-0 mt-10 md:gap-x-10 gap-x-2 overflow-hidden scroll-smooth snap-x snap-mandatory px-4"
             >
                  
               <ExperienceCard

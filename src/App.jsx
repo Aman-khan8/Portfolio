@@ -12,13 +12,13 @@ function App() {
     <>
     <Navbar/>
 
-    <section id='Home' className='w-full h-screen items-center '>
+    <section id='Home' className='w-full h-screen md:h-[90vh] items-center '>
       <Home/> 
       </section>
-      <section id='About' className='w-full h-screen'>
+      <section id='About' className='w-full h-screen md:h-[90vh] mt-5 md:mt-0'>
       <About/> 
       </section>
-             <section id='Projects' className='w-full h-screen '>
+             <section id='Projects' className='w-full h-screen mt-5 md:mt-0'>
       <Projects/> 
       </section>
        <section id='Experience' className='w-full h-screen'>

@@ -11,7 +11,7 @@ return <>
             <div className="w-[75%] flex-col justify-center items-center">
                  <div className="flex-col "> 
             <h2 className="text-blue-700 font-bold">Projects</h2>
-            <span className="text-xl font-bold">Every project is a new challenge and opportunity to learn and grow.</span>
+            <span className="md:text-xl font-bold">Every project is a new challenge and opportunity to learn and grow.</span>
             </div>
               <ProjectCard title="Postly" description="Postly is a full-stack social posting app built with React, featuring a live text editor and protected routes. It integrates Appwrite for user authentication, database operations, and secure backend handling" image={project1} codeLink="https://github.com/Aman-khan8/Postly" liveDemoLink="https://postly-five.vercel.app/"   reverse={false}/>
 
