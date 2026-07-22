@@ -2,6 +2,9 @@ import React from "react";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 function ProjectCard(props) {
+  const hasCodeLink = Boolean(props.codeLink);
+  const hasLiveDemoLink = Boolean(props.liveDemoLink);
+
   return (
     <div
       className={`w-full md:flex gap-x-10 md:mt-30 mt-20 ${
@@ -9,8 +12,17 @@ function ProjectCard(props) {
       }`}
     >
       <div className="md:w-[45%] hover:scale-105 transition-transform duration-300">
-       <a href={props.liveDemoLink} target="_blank" rel="noopener noreferrer">
-        <img src={props.image} alt="project" />
+        <a
+          href={props.liveDemoLink || "#"}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={(event) => {
+            if (!props.liveDemoLink) {
+              event.preventDefault();
+            }
+          }}
+        >
+          <img src={props.image} alt="project" />
         </a>
       </div>
 
@@ -22,19 +34,23 @@ function ProjectCard(props) {
         <span className="text-stone-700">{props.description}</span>
 
         <div className="flex gap-x-10 mt-5 md:w-[80%] justify-center">
-          <a href={props.codeLink} target="_blank" rel="noopener noreferrer">
-            <div className="flex font-bold gap-x-2 cursor-pointer hover:text-gray-500">
-              <span >Code</span>
-              <FaGithub size={25}  />
-            </div>
-          </a>
+          {hasCodeLink && (
+            <a href={props.codeLink} target="_blank" rel="noopener noreferrer">
+              <div className="flex font-bold gap-x-2 cursor-pointer hover:text-gray-500">
+                <span>Code</span>
+                <FaGithub size={25} />
+              </div>
+            </a>
+          )}
 
-          <a href={props.liveDemoLink} target="_blank" rel="noopener noreferrer">
-            <div className="flex font-bold gap-x-2 cursor-pointer hover:text-gray-500">
-              <span className="">Live Demo</span>
-              <FaExternalLinkAlt size={22} className="" />
-            </div>
-          </a>
+          {hasLiveDemoLink && (
+            <a href={props.liveDemoLink} target="_blank" rel="noopener noreferrer">
+              <div className="flex font-bold gap-x-2 cursor-pointer hover:text-gray-500">
+                <span className="">Live Demo</span>
+                <FaExternalLinkAlt size={22} className="" />
+              </div>
+            </a>
+          )}
         </div>
       </div>
     </div>

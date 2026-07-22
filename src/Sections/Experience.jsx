@@ -4,6 +4,7 @@ import ExperienceCard from "../Components/experienceCard";
 import hackathon1 from "../assets/hackathon1.jpeg"
 import hackathon2 from "../assets/hackathon2.jpeg"
 import hackathon3 from "../assets/hackathon3.jpeg"
+import Navtacc_test from "../assets/Nactac_result.jpeg"
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 function Experience() {
@@ -60,6 +61,9 @@ function Experience() {
                 description="Completed a 5-week Web Development internship at PEL, where I enhanced my React and backend development skills while working under the supervision of experienced IT professionals on real-world projects."
                 liveDemoLink="https://www.linkedin.com/in/aman-khan-82970a294/recent-activity/all/"
               />
+               <ExperienceCard
+                image={Navtacc_test}
+                description="Rigorous assessment and practical training covering end-to-end full-stack engineering, secure authentication, database design, and production deployment using the MERN stack"   />
             
               <ExperienceCard
                 image={hackathon1}

@@ -14,7 +14,12 @@ function home(){
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["Front-End Developer ", "Future MERN Stack Web Engineer","CS Student (UCP)"],
+strings: [
+  "Full Stack Developer",
+  "CS Student @ UCP",
+  "Aspiring AI Engineer",
+  "MERN Stack & GenAI Developer"
+],
       typeSpeed: 50,
       backSpeed: 35,
       backDelay: 1000,
