@@ -13,7 +13,7 @@ const projects = [
     image: project3,
     codeLink: "https://github.com/Aman-khan8/AI-Schedule-Analyzer",
     liveDemoLink: "",
-    category: "front",
+    category: "web",
     reverse: true,
   },
   {
@@ -23,7 +23,7 @@ const projects = [
     image: project1,
     codeLink: "https://github.com/Aman-khan8/Postly",
     liveDemoLink: "https://postly-five.vercel.app/",
-    category: "front",
+    category: "web",
     reverse: false,
   },
   {
@@ -33,7 +33,7 @@ const projects = [
     image: project2,
     codeLink: "https://github.com/Aman-khan8/Car-Rental",
     liveDemoLink: "https://aman-khan8.github.io/Car-Rental/",
-    category: "front",
+    category: "web",
     reverse: true,
   },
 ];
@@ -74,7 +74,7 @@ function Projects() {
               }}
             >
               <option value="all">All</option>
-              <option value="front">Front Projects</option>
+              <option value="web">Web Projects Projects</option>
             </select>
           </label>
         </div>
