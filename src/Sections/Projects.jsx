@@ -2,10 +2,32 @@ import React, { useMemo, useState } from "react";
 import project1 from "../assets/project1.png";
 import project2 from "../assets/project2.png";
 import project3 from "../assets/AI_schedule_Analyzer.png";
+import project4 from "../assets/arcadia.png";
+import project5 from "../assets/HuberRegression.png";
 
 import ProjectCard from "../Components/projectCard";
 
 const projects = [
+    {
+    title: "Arcadia Leatherworks",
+    description:
+      "Arcadia Leatherwork is a full-stack MERN e-commerce web application developed as our **first freelance client project**, built according to the client's specific business requirements. The application includes a responsive customer storefront, secure JWT authentication, an admin dashboard for managing products and orders, Cloudinary-powered image uploads, and a modern, optimized user experience. It is deployed using Vercel (frontend) and Render (backend), providing a scalable and production-ready solution.",
+    image: project4,
+    codeLink: "",
+    liveDemoLink: "https://www.arcadialeatherworks.com/",
+    category: "web",
+    reverse: false,
+  },
+     {
+    title: "Air Quality Prediction",
+    description:
+      "Built an Air Quality Prediction model using Huber Regression with the UCI Air Quality dataset. Applied data preprocessing, feature scaling, and model evaluation, achieving an 89.35% R² score with low prediction error (MAE: 0.289, RMSE: 0.474).",
+    image: project5,
+    codeLink: "https://github.com/Aman-khan8/AI-Lab-practices/blob/main/Air%20Quality.ipynb",
+    liveDemoLink: "",
+    category: "ai",
+    reverse: true,
+  },
   {
     title: "AI Schedule Analyzer",
     description:
@@ -14,7 +36,7 @@ const projects = [
     codeLink: "https://github.com/Aman-khan8/AI-Schedule-Analyzer",
     liveDemoLink: "",
     category: "web",
-    reverse: true,
+    reverse: false,
   },
   {
     title: "Postly",
@@ -24,7 +46,7 @@ const projects = [
     codeLink: "https://github.com/Aman-khan8/Postly",
     liveDemoLink: "https://postly-five.vercel.app/",
     category: "web",
-    reverse: false,
+    reverse: true,
   },
   {
     title: "Car Rental",
@@ -34,7 +56,7 @@ const projects = [
     codeLink: "https://github.com/Aman-khan8/Car-Rental",
     liveDemoLink: "https://aman-khan8.github.io/Car-Rental/",
     category: "web",
-    reverse: true,
+    reverse: false,
   },
 ];
 
@@ -74,7 +96,8 @@ function Projects() {
               }}
             >
               <option value="all">All</option>
-              <option value="web">Web Projects Projects</option>
+              <option value="web">Web Projects</option>
+              <option value="ai">AI Projects</option>
             </select>
           </label>
         </div>
